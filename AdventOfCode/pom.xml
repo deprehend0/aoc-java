@@ -8,6 +8,11 @@
   <artifactId>AdventOfCode</artifactId>
   <version>1.0-SNAPSHOT</version>
   <build>
+    <resources>
+      <resource>
+        <directory>${project.basedir}/src/main/java/edition2024/resources</directory>
+      </resource>
+    </resources>
     <testResources>
       <testResource>
         <directory>${project.basedir}/src/test/java/utils/resources</directory>

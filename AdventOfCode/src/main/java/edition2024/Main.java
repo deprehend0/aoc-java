@@ -5,7 +5,7 @@ import java.io.IOException;
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        DayOne dayOne = new DayOne();
+        Day01 dayOne = new Day01();
         dayOne.solve();
         dayOne.printSolutions();
     }

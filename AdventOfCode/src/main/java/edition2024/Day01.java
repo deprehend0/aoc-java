@@ -7,11 +7,11 @@ import java.util.List;
 import utils.InputReader;
 import utils.Solution;
 
-public class DayOne extends Solution {
+public class Day01 extends Solution {
     InputReader ir = new InputReader();
 
     public void solve() throws IOException {
-        List<ArrayList<Integer>> inputLists = ir.readToTwoLists("day1.txt");
+        List<ArrayList<Integer>> inputLists = ir.readToTwoLists("day01.txt");
         List<Integer> sortedLeftList = inputLists.get(0).stream().sorted().toList();
         List<Integer> sortedRightList = inputLists.get(1).stream().sorted().toList();
 

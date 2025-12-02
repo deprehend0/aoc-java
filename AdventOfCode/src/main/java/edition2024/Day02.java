@@ -13,9 +13,7 @@ public class Day02 extends Solution {
 
     public boolean isSafe(List<Integer> levels) {
         int lastLevel = levels.removeFirst();
-        boolean increasing = true
-        while (levels.size() > 0) {
-
-        }
+        boolean increasing = true;
+        return true;
     }
 }

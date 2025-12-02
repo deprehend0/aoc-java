@@ -33,4 +33,13 @@ public class InputReader {
             throw new RuntimeException("File %s not found".formatted(filename), e);
         }
     }
+
+    public List<String> readToStringList(Class<?> clazz, String filename) throws IOException {
+        InputStream is = clazz.getResourceAsStream(filename);
+        try (BufferedReader reader = new BufferedReader(new InputStreamReader(is))) {
+            return reader.lines().toList();
+        } catch (IOException e) {
+            throw new RuntimeException("File %s not found".formatted(filename), e);
+        }
+    }
 }
